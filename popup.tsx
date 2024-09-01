@@ -6,11 +6,15 @@ function IndexPopup() {
   return (
     <div
       style={{
-        padding: 16
+        display: "flex",
+        flexDirection: "column",
+        padding: 16,
+        width: 200,
       }}>
       <h2>
-        Welcome to your{" "}
+        Welcome to your
         <a href="https://www.plasmo.com" target="_blank">
+          {" "}
           Plasmo
         </a>{" "}
         Extension!

@@ -1,0 +1,10 @@
+#plasmo-shadow-container {
+  position: fixed !important;
+  font-family: sans-serif;
+  right: 0px;
+  top: 30%;
+}
+
+#plasmo-overlay-0 {
+  position: relative !important;
+}

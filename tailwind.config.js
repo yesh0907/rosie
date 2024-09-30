@@ -3,8 +3,9 @@ const { fontFamily } = require("tailwindcss/defaultTheme")
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: "jit",
+  prefix: "rosie-",
   darkMode: ["class"],
-  content: ["popup/**/*.tsx", "components/**/*.{ts,tsx}"],
+  content: ["popup/**/*.tsx", "components/**/*.{ts,tsx}", "contents/**/*.tsx"],
   theme: {
     container: {
       center: true,
@@ -70,6 +71,9 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out"
+      },
+      boxShadow: {
+        'all': "0px 4px 10px 0px rgba(0, 0, 0, 0.15);"
       }
     }
   },

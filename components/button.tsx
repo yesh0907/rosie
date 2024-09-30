@@ -5,25 +5,25 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "~/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "rosie-inline-flex rosie-items-center rosie-justify-center rosie-whitespace-nowrap rosie-rounded-md rosie-text-sm rosie-font-medium rosie-ring-offset-background rosie-transition-colors rosie-focus-visible:outline-none rosie-focus-visible:ring-2 rosie-focus-visible:ring-ring rosie-focus-visible:ring-offset-2 rosie-disabled:pointer-events-none rosie-disabled:opacity-50",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "rosie-bg-primary rosie-text-primary-foreground rosie-hover:bg-primary/90",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "rosie-bg-destructive rosie-text-destructive-foreground rosie-hover:bg-destructive/90",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "rosie-border rosie-border-input rosie-bg-background rosie-hover:bg-accent rosie-hover:text-accent-foreground",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+          "rosie-bg-secondary rosie-text-secondary-foreground rosie-hover:bg-secondary/80",
+        ghost: "rosie-hover:bg-accent rosie-hover:text-accent-foreground",
+        link: "rosie-text-primary rosie-underline-offset-4 rosie-hover:underline",
       },
       size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
-        icon: "h-10 w-10",
+        default: "rosie-h-10 rosie-px-4 rosie-py-2",
+        sm: "rosie-h-9 rosie-rounded-md rosie-px-3",
+        lg: "rosie-h-11 rosie-rounded-md rosie-px-8",
+        icon: "rosie-h-10 rosie-w-10",
       },
     },
     defaultVariants: {
